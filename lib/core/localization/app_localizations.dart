@@ -1,0 +1,113 @@
+import 'package:flutter/material.dart';
+
+class AppTranslations {
+  static final Map<String, Map<String, String>> _localizedValues = {
+    'en': {
+      'home': 'Home',
+      'categories': 'Categories',
+      'my_flashcards': 'My Flashcards',
+      'study': 'Study',
+      'bookmarks': 'Bookmarks',
+      'statistics': 'Statistics',
+      'settings': 'Settings',
+      'help': 'Help & Support',
+      'logout': 'Logout',
+      'hello': 'Hello, {name}! 👋',
+      'keep_learning': 'Keep learning, keep growing.',
+      'total_cards': 'Total Cards',
+      'studied': 'Studied',
+      'view_all': 'View All',
+      'recently_studied': 'Recently Studied',
+      'add_new': 'Add New Flashcard',
+      'dark_mode': 'Dark Mode',
+      'language': 'Language',
+      'appearance': 'Appearance',
+      'profile': 'Profile',
+      'change_name': 'Change Name',
+      'user_name': 'User Name',
+    },
+    'ur': {
+      'home': 'ہوم',
+      'categories': 'اقسام',
+      'my_flashcards': 'میرے فلیش کارڈز',
+      'study': 'مطالعہ',
+      'bookmarks': 'بک مارکس',
+      'statistics': 'اعداد و شمار',
+      'settings': 'ترتیبات',
+      'help': 'مدد اور تعاون',
+      'logout': 'لاگ آؤٹ',
+      'hello': 'ہیلو، {name}! 👋',
+      'keep_learning': 'سیکھتے رہیں، بڑھتے رہیں۔',
+      'total_cards': 'کل کارڈز',
+      'studied': 'مطالعہ کیا',
+      'view_all': 'سب دیکھیں',
+      'recently_studied': 'حال ہی میں مطالعہ کیا گیا',
+      'add_new': 'نیا فلیش کارڈ شامل کریں',
+      'dark_mode': 'ڈارک موڈ',
+      'language': 'زبان',
+      'appearance': 'ظاہری شکل',
+      'profile': 'پروفائل',
+      'change_name': 'نام تبدیل کریں',
+      'user_name': 'صارف کا نام',
+    },
+    'es': {
+      'home': 'Inicio',
+      'categories': 'Categorías',
+      'my_flashcards': 'Mis Tarjetas',
+      'study': 'Estudiar',
+      'bookmarks': 'Marcadores',
+      'statistics': 'Estadísticas',
+      'settings': 'Ajustes',
+      'help': 'Ayuda y Soporte',
+      'logout': 'Cerrar Sesión',
+      'hello': '¡Hola, {name}! 👋',
+      'keep_learning': 'Sigue aprendiendo, sigue creciendo.',
+      'total_cards': 'Tarjetas Totales',
+      'studied': 'Estudiado',
+      'view_all': 'Ver Todo',
+      'recently_studied': 'Estudiado Recientemente',
+      'add_new': 'Añadir Nueva Tarjeta',
+      'dark_mode': 'Modo Oscuro',
+      'language': 'Idioma',
+      'appearance': 'Apariencia',
+      'profile': 'Perfil',
+      'change_name': 'Cambiar Nombre',
+      'user_name': 'Nombre de Usuario',
+    },
+    'ar': {
+      'home': 'الرئيسية',
+      'categories': 'الفئات',
+      'my_flashcards': 'بطاقاتي التعليمية',
+      'study': 'دراسة',
+      'bookmarks': 'الإشارات المرجعية',
+      'statistics': 'الإحصائيات',
+      'settings': 'الإعدادات',
+      'help': 'المساعدة والدعم',
+      'logout': 'تسجيل الخروج',
+      'hello': 'مرحباً {name}! 👋',
+      'keep_learning': 'استمر في التعلم، استمر في النمو.',
+      'total_cards': 'إجمالي البطاقات',
+      'studied': 'تمت دراستها',
+      'view_all': 'عرض الكل',
+      'recently_studied': 'تمت دراستها مؤخراً',
+      'add_new': 'إضافة بطاقة جديدة',
+      'dark_mode': 'الوضع الداكن',
+      'language': 'اللغة',
+      'appearance': 'المظهر',
+      'profile': 'الملف الشخصي',
+      'change_name': 'تغيير الاسم',
+      'user_name': 'اسم المستخدم',
+    },
+  };
+
+  static String translate(BuildContext context, String key) {
+    // We would normally use a Bloc or Provider here to get the current language
+    // But for simplicity in this implementation, we will pass the code if needed
+    // or assume English if not found.
+    return key; 
+  }
+  
+  static String getString(String code, String key) {
+    return _localizedValues[code]?[key] ?? _localizedValues['en']![key]!;
+  }
+}
